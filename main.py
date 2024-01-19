@@ -1,5 +1,6 @@
 import multipart
 from fastapi import FastAPI, Form
+import uvicorn
 
 
 # Create the FastAPI instance
@@ -34,8 +35,9 @@ async def write_notes(note: str = Form(...)):
         file.write(note)
     return {"message": "Note saved successfully."}
 
-
+@app.get("/hello/{name}")
+async def say_hello(name: str):
+    return {"message": f"Hello {name}"}
 
 if __name__ == "__main__":
-    import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
