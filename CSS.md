@@ -2,7 +2,16 @@
 
 ## CSS Basics:
 ### Structure:
-
+```css
+body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+```
+Every CSS rule consists of a few parts. There is a selector, property, and value to be assigned to the property. In this example, the selector is ```body```, and this selects any ```body``` elements in the document (there should only be one though). Inside the ```{}``` are the declarations. First, we have the property value ```padding```, and we are assigning it a value of ```0```. All declarations consist of the property name which we want to effect, and the value we want to assign. CSS is relatively more complicated than HTML, as there are a wide range of selectors as well as property values. If you are interested in learning more, please check out the [MDN CSS Docs.](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 ### How to Use:
 CSS can be included in a webpage in a few different ways. Firstly, it can be definied directly in the HTML page by using the style tag as shown below.
 ```html
