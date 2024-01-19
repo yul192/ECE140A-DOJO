@@ -41,6 +41,14 @@ are not tracked, and what files are modified.
 git status
 ```
 
+#### Side Note:
+.gitignore is a file that you can create in your project directory. This file will tell git to ignore certain files or
+directories. This is useful for not tracking files that you don't want to track. For example, you don't want to track
+your virtual environment directory, any credentials or database files.
+
+We included a .gitignore file in this repo. Please add your virtual environment and the text file you created to this
+
+
 
 ### Python:
 #### Creating a virtual environment:

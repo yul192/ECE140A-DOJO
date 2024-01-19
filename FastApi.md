@@ -28,7 +28,12 @@ The html files will be in the templates' directory. We will serve these files us
 * templates/web_development.html
 * templates/notes.html
 
+### Notes:
+We are going to use javascrit to add functionality to the website. We will be using fetch to make a post request to send
+our notes and a get request to get our notes. Notes will be stored in a file called notes.txt.
 
 
-
+### Fast API decorators:
+We have included the decorators for the / and /notes routes. You will need to add the other routes. Create 3 more functions
+for basics page, web serving page, and web development page. Add the apporiate decorators to these functions. 
 
