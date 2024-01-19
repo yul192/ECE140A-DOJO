@@ -3,7 +3,7 @@
 ## Env Basics:
 ### Git and Github:
 #### Initializing a git repo:
-Do this in the root of the project directory which you want to track. When you clone a repo, you don't need to do this.
+Do this in the root of the project directory which you want to track. When you use git clone on an existing repo, you don't need to do this.
 a git repo will be initialized automatically.
 ```bash
 git init
@@ -13,6 +13,10 @@ This is adding files to the staging area, not the repo itself. The staging area 
 to the repo. Think about it as just placing some items in a box, but not sealing it or shipping it.
 ```bash
 git add <file>
+```
+To add all files and folders in the working directory, run the below command.
+```bash
+git add .
 ```
 #### Commiting files to the repo:
 This is commiting the files in the staging area to the repo. It is a checkpoint you create in your local git tree.
@@ -63,9 +67,13 @@ python3 -m venv <name of virtual environment>
 ```
 Once you run this command you should see a new directory in your project directory called <name of virtual environment>.
 This directory will include a bin directory which will have a python executable. This is the python executable that you
-will use for your project. You can activate the virtual environment by running the following command:
+will use for your project. You can activate the virtual environment by running the following command on Unix (MacOS, Linux):
 ```bash
 source <name of virtual environment>/bin/activate
+```
+On Windows machines, run:
+```bash
+.\<name of virtual environment>\Scripts\activate
 ```
 Once you run this command you should see the name of your virtual environment in parenthesis in your terminal. This means
 that you have successfully activated your virtual environment. You can deactivate your virtual environment by running the
