@@ -1,14 +1,25 @@
 import multipart
 from fastapi import FastAPI, Form
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 
 
 # Create the FastAPI instance
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return HTMLResponse("index.html")
+
+
+@app.get("/basics")
+async def basics():
+    return HTMLResponse("basics.html")
+
+
+# add the remaining endpoints here
 
 @app.get("/notes")
 async def read_notes():
@@ -35,9 +46,12 @@ async def write_notes(note: str = Form(...)):
         file.write(note)
     return {"message": "Note saved successfully."}
 
+
+# an example of a path parameter
 @app.get("/hello/{name}")
 async def say_hello(name: str):
     return {"message": f"Hello {name}"}
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

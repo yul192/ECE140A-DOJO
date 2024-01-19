@@ -10,6 +10,7 @@ We will provide a skeleton for you to start with. You can find this in main.py. 
 * [get] /basics: This page will include information from basics.md
 * [get] /web_serving: This page will include information from web_serving.md
 * [get] /web_development: This page will include information from web_development.md
+* [get] /view_notes: This page will include a text box to add notes
 * [get] /notes: This will return all the notes that have been created.
 * [post] /notes: This will send a new note to the backend.
 

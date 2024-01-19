@@ -12,12 +12,14 @@ CSS can be included in a webpage in a few different ways. Firstly, it can be def
     }
 </style>
 ```
+Isn't css so cool? You can add all kinds of colors. We choose blanchedalmond because it is the best sounding color.
+
 The snippet above will change the background color of the body tag (essentially the whole visible webpage) to the specified color. CSS supports raw RGB, hex, and other color formats, as well as some pre-defined names.
 ***
 In addition to the style element, CSS can be contained in its own file, separate from the HTML, and then essentially imported by the HTML page.
 ```html
 <head>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 ```
 ```css
