@@ -11,8 +11,8 @@ We will provide a skeleton for you to start with. You can find this in main.py. 
 * [get] /web_serving: This page will include information from web_serving.md
 * [get] /fast_api: This page will include information from fast_api.md
 * [get] /web_development: This page will include information from web_development.md
-* [get] /notes 
-* [post] /notes
+* [get] /notes: This will return all the notes that have been created.
+* [post] /notes: This will send a new note to the backend.
 
 ### Serving static files:
 We will be serving 2 static files, a css file and a js file. These files will be in the static directory. 
